@@ -1,0 +1,54 @@
+@media (max-width: 768px){
+    .inner{padding:0 0}
+    /*优秀案例*/
+    /*新闻中心*/
+    .section-news .section-title{padding-top: 5%;}
+    .section-news>p{padding-top: 0;margin-bottom: 0;line-height: 28px;}
+    .section-news>.row{height: 460px;padding: 0;}
+    .section-news .slide .fp-tableCell{height: 460px!important;padding-top: 5px;padding-bottom: 40px;}
+    .section-news>.row .logo {height: 12%; }
+    /*.section-news>.row .pic{height: 77%;}*/
+    .section-news>.row .pic{height: 70%}
+    /*.section-news>.row .shaow-txt{   !* padding-top: 10px;*! margin: 10.3% 0;}*/
+    /*了解大搜索*/
+}
+    @media (min-width: 768px) {
+        .pc{display: block;}
+        .cell{display: none;}
+        .section .section-title{padding: 5% 0 2%;}
+        /*优秀案例*/
+        .section-excellent.inner{width: 100%;}
+        .section-excellent .pc .fp-tableCell>.row{height: 100%}
+        .section-excellent .pc .col-sm-6{padding: 10px 70px}
+        .section-excellent .slide .pic img{width: 80%;left: 10%;top: 10px;}
+        /*新闻中心*/
+        .section-news .section-title{padding-bottom:0}
+        .section-news>p{padding-top:0;}
+        .section-news>.row{height: 540px;}
+        .section-news>.row .pic{width: 175px}
+        /*了解大搜索*/
+    .section-understand .inner{width: 80%}
+        /*.section-news>.row .shaow-txt{padding-top: 2px}*/
+        /*底部咨询*/
+        .phone-talk{display: none;}
+        .right-phone{ display: none;}
+}
+@media (min-width: 1024px) {
+    /*优秀案例*/
+    /*新闻中心*/
+    .section-news>.row .pic{width: 186px;}
+}
+@media (min-width: 1280px) {
+    /*优秀案例*/
+    /*新闻中心*/
+    .section-news>.row .pic{width: 220px;height: 52%;}
+    /*.section-news>.row .shaow-txt{padding-top: 4px}*/
+}
+@media (min-width: 1580px){
+}
+@media (min-width: 1920px) {
+    /*优秀案例*/
+    /*新闻中心*/
+}
+
+

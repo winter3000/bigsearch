@@ -1,0 +1,227 @@
+*{
+    padding: 0;
+    margin: 0 auto;
+}
+.computerLOGO{
+    position: absolute;
+}
+.navbar-toggle{
+    /*border: 1px solid red;*/
+}
+.icon-bar{
+    border: 1px solid white;
+}
+.nav-bgcolor{
+    /*background-color: #272727;*/
+    background-color: rgba(68,175,233,0.6);
+}
+
+
+@media (min-width: 1920px) {
+    /*������ͼƬ*/
+    .nav>li>a>img{
+        width: 65%;
+        /*width: 100%;*/
+        height: 170%;
+        margin-top: -16px;
+        /*border: 1px solid red;*/
+    }
+}
+@media (max-width: 1280px) {
+    .nav>li>a {
+        font-size: 14px;
+    }
+}
+@media (max-width: 1024px) {
+    .nav>li>a {
+        font-size: 8px;
+    }
+    .computerLOGO{
+        margin-top: 10px;
+    }
+}
+@media (max-width: 768px) {
+    /*���ڵ��Ŀ�ʼ*/
+
+    /*�ֻ��е�logo*/
+    /*�����˵��ĵ�li*/
+    .navbar,.navbar-header{
+        height: 50px;
+    }
+    .navbar-brand{
+        height: 100px;
+    }
+    .navbar-brand>img{
+        width: 200px;
+        height: 40px;
+        margin-left: 10px;
+        /*border: 1px solid red;*/
+    }
+    .navbar-toggle{
+        margin-top: 2%;
+        border: 1px solid white;
+    }
+    .icon-bar{
+        border: 1px solid white;
+    }
+    .nav-bgcolor{
+        background-color: rgba(68,175,233,0.6);
+    }
+    .navbar{
+        height: 50px;
+    }
+    /*�����Ĳ˵�����ʼ*/
+    .over{
+        overflow-y: inherit;
+    }
+    .navbar-nav{
+        margin-left: 17%;
+    }
+    .nav{
+        height: 80px;
+    }
+    .nav>li{
+        height: 80px;
+    }
+    .nav>li>a{
+        width: 100%;
+        height: 80px;
+        line-height: 45px;
+        /*font-size: 16px;*/
+        color: white;
+    }
+    .nav li a:active{
+        height: 46px;
+        background: rgba(68,175,233,0.6);
+    }
+    .nav>li>a:hover{
+        height: 48px;
+        background-color: rgba(68,175,233,0.6);
+    }
+    .nav>li>a:visited{
+        background-color: rgba(68,175,233,0.6);
+    }
+    /*������ͼƬ*/
+    .nav>li>a>img{
+        width: 100%;
+        height: 140%;
+        margin-top: -10%;
+        /*border: 1px solid red;*/
+    }
+    /*���ڵ��Ľ���*/
+
+    .navbar-nav{
+        margin-left: 0;
+        /*border: 1px solid pink;*/
+    }
+    .nav>li>a{
+        font-size: 16px;
+    }
+}
+@media (max-width: 760px) {
+    .navbar-brand{
+        margin-top: -5%;
+    }
+    .navbar-brand{
+        margin-top: -2.5%;
+    }
+    /*.navbar-toggle{*/
+        /*margin-top: 3%;*/
+    /*}*/
+    .nav>li>a{
+        color: #272727;
+    }
+    /*/!*�����˵��ĵ�li*!/*/
+    .navbar,.navbar-header{
+        /*height: 80px;*/
+    }
+    .navbar-collapse{
+        width: 108.5%;
+        height: 300px;
+        /*margin-top: -2px;*/
+    }
+    .navbar-nav {
+        margin:0px;
+        width: 100%;
+        /*border: 2px solid #272727;*/
+        /*border: 1px solid red;*/
+    }
+    .nav {
+        height: auto;
+        width: 99.9%;
+        padding-bottom: 40px;
+        background-color: rgba(68,175,233,0.6);
+        border: 1px solid rgba(68,175,233,0.6);
+    }
+    nav>li {
+        width: 100%;
+        height: 45px;
+        /*border: 1px solid green;*/
+    }
+    .nav>li>a {
+        width: auto;
+        height: 45px;
+        color: white;
+        line-height: 25px;
+        /*background-color: pink;*/
+        /*border: 1px solid red;*/
+    }
+    .nav>li {
+        margin-bottom: -35px;
+    }
+    .nav li a:hover{
+        color: white;
+    }
+}
+@media (max-width: 320px) {
+    .navbar-toggle{
+        margin-top: 2.5%;
+    }
+}
+@media (min-width: 768px) and (max-width: 1920px){
+    .nav>li>a{
+        font-size: 16px;
+    }
+    .navbar-brand>img{
+        /*width: 100%;*/
+        /*height: 100%;*/
+    }
+    .navbar-nav{
+        margin-left: 23%;
+    }
+    .nav-bgcolor{
+        background-color: rgba(68,175,233,0.6);
+    }
+    .nav{
+        height: 80px;
+
+    }
+    .nav>li{
+        height: 80px;
+    }
+    .nav>li>a{
+        width: 100%;
+        height: 80px;
+        line-height: 45px;
+        /*font-size: 16px;*/
+        color: white;
+    }
+    .nav li a:active{
+        height: 76px;
+        background:rgba(68,175,233,0.6);
+    }
+    .nav>li>a:hover{
+        height: 78px;
+        background-color: rgba(68,175,233,0.6);
+    }
+    .nav>li>a:visited{
+        background-color: rgba(68,175,233,0.6);
+    }
+    /*������ͼƬ*/
+    .nav>li>a>img{
+        /*width: 100%;*/
+        /*height: 140%;*/
+        /*margin-top: -10%;*/
+        /*border: 1px solid red;*/
+    }
+}

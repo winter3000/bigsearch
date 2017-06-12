@@ -1,0 +1,57 @@
+
+
+body{
+    font-family: icon;
+    position: relative;
+}
+@font-face {
+    font-family: icon;
+    src:url("../font/iconfont.eot");
+    src:url("../font/iconfont.ttf");
+    src:url("../font/iconfont.woff");
+}
+/*¼ýÍ·*/
+.jiantouUp,.jiantouNext{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    font-size: 20px;
+    color: red;
+    z-index: 2;
+}
+.jiantouUp:hover,.jiantouNext:hover{
+    cursor: pointer;
+}
+/*.jiantouUp{*/
+    /*top:90px*/
+/*}*/
+.jiantouNext{
+    bottom:0
+}
+.icon-weixin:before { content: "\e63b"; }
+
+.icon-anzhuo:before { content: "\e610"; }
+
+.icon-iconoa:before { content: "\e601"; }
+
+.icon-dengpao:before { content: "\e600"; }
+
+.icon-jiantouxiangxia:before { content: "\e624"; }
+
+.icon-html:before { content: "\e6c6"; }
+
+.icon-shujuku:before { content: "\e682"; }
+
+.icon-app1:before { content: "\e602"; }
+
+.icon-arrowup3:before { content: "\e606"; }
+
+.icon-vralternation:before { content: "\e65a"; }
+
+.icon-pingguo:before { content: "\e79e"; }
+
+.icon-xitong:before { content: "\e616"; }
+
+.icon-donggandanche:before { content: "\e607"; }
+
+.icon-xitong1:before { content: "\e502"; }

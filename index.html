@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>成都硬件app开发有限公司</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- 引入 Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/jquery.fullPage.css"/>
+
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/header.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/index-media.css"/>
+    <!--引用百度地图API-->
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=NEznlksz0P7eIfwLk7eND7j36PlOSHIZ"></script>
+    <style>
+        label.BMapLabel{padding:0;font-size:16px!important;color: red;max-width: 50px!important;}
+        .baiduMap .mapstar::-webkit-input-placeholder{color: #0a9dc7}
+        .baiduMap .mapstar:-moz-placeholder{color: #0a9dc7}
+        .baiduMap .mapstar::-moz-placeholder{color: #0a9dc7}
+        .baiduMap .mapstar:-ms-input-placeholder{color: #0a9dc7}
+    </style>
+</head>
+<body>
+<div class="jiantouUp icon-arrowup3"></div>
+<div class="jiantouNext icon-arrowup3" style="transform:rotate(180deg)"></div>
+<!--导航开始-->
+<nav class="navbar nav-bgcolor">
+    <a class="navbar-brand col-lg-3 col-md-3 col-sm-3 computerLOGO hidden-xs" href="#"><img class="img-responsive" src="image/weiwangLOGO6.png" alt=""/></a>
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!--<a class="navbar-brand" href="#">brank</a>-->
+            <a class="navbar-brand hidden-lg hidden-md hidden-sm col-xs-3" href="#"><img class="" src="image/weiwangLOGO6.png" alt=""/></a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div style="overflow-y:inherit" class="collapse navbar-collapse over" id="bs-example-navbar-collapse-1">
+            <ul id="menu" class="nav navbar-nav col-lg-offset-8 col-md-offset-4 col-sm-offset-4 col-lg-8 col-md-8 col-sm-12">
+                <!--<li class="col-lg-2 col-md-2 col-sm-2 hidden-xs"><a href="#"><img src="image/logo1.png"/></a></li>-->
+                <li data-menuanchor="page1" class="col-lg-2 col-md-2 col-sm-2 text-center"><a href="#page1">首页<span class="sr-only">(current)</span></a></li>
+                <li data-menuanchor="page3" class="col-lg-2 col-md-2 col-sm-2 text-center"><a href="#page2" >优秀案例 </a></li>
+                <li data-menuanchor="page2" class="col-lg-2 col-md-2 col-sm-2 text-center"><a href="#page3">定制开发</a></li>
+                <li data-menuanchor="page4" class="col-lg-2 col-md-2 col-sm-2 text-center"><a href="#page4" >新闻中心 </a></li>
+                <!--<li data-menuanchor="page5" class="col-lg-2 col-md-2 col-sm-2 text-center"><a href="#page5" >了解<span class="hidden-md hidden-sm hidden-xs">大</span>搜索 </a></li>-->
+                <li data-menuanchor="page5" class="col-lg-2 col-md-2 col-sm-2 text-center"><a href="#page5" >关于我们</a></li>
+                <li data-menuanchor="page6" class="col-lg-2 col-md-2 col-sm-2 text-center"><a href="#page6" >联系我们 </a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<!--导航结束-->
+<!--<div class="container-fluid">-->
+<!--滚动屏开始-->
+    <div id="fullPage" class="">
+        <!-- 第一屏开始-->
+        <div class="section section-one" style="overflow: hidden;">
+            <!-- 电脑中的显示的第一屏-->
+            <!--<div class="banenr hidden-xs">-->
+                <!--<div class="mark">-->
+                    <!--<div class="white-cicril"></div>-->
+                    <!--<div class="text-left">大搜索<span class="hidden-lg hidden-md hidden-sm banenrC"></span>科技</div>-->
+                    <!--<div class="text-right">专业的互联网+服务运营商</div>-->
+                    <!--<div class="text-left kongge hidden-xs">一家集电子商务、网络营销、网站建设等为一体的综合性营销、管理的交易平台公司,是专业的互联网+产品运营商，是大</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!-- 手机中显示的第一屏-->
+            <div class="Sbanenr hidden-lg hidden-md hidden-sm">
+                <p>电商平台APP开发</p>
+                <div>
+                    <div class="text-center SbannerICON">
+                        <div class="col-xs-3 one">
+                            <p class="icon-pingguo sIonc-trans"></p>
+                            <p class=" ">IOS开发</p>
+                        </div>
+                        <div class="col-xs-3">
+                            <p class="icon-anzhuo"></p>
+                            <p class=" ">Android开发</p>
+                        </div>
+                        <div class="col-xs-3">
+                            <p class="icon-weixin"></p>
+                            <p class=" ">微信开发</p>
+                        </div>
+                        <div class="col-xs-3">
+                            <p class="icon-donggandanche"></p>
+                            <p class=" ">打车软件开发</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-10 text-center SbannerICON">
+                        <div class="col-xs-4">
+                            <p class="icon-iconoa"></p>
+                            <p class=" ">OA开发</p>
+                        </div>
+                        <div class="col-xs-4">
+                            <p class="icon-xitong"></p>
+                            <p class=" ">分销系统开发</p>
+                        </div>
+                        <div class="col-xs-4">
+                            <p class="icon-vralternation"></p>
+                            <p class=" ">VR开发</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 最下面的图片-->
+                <div class="PhoneB">
+                    <div col="col-xs-12"><img class="img-responsive" src="image/Sbanner4_02.jpg" alt=""/></div>
+                </div>
+            </div>
+        </div>
+        <!-- -->
+        <!-- 第一屏结束-->
+        <!--2 优秀案例展示-->
+        <div class="section" style="overflow: hidden;padding-top: 50px">
+            <div class="section-excellent">
+                <div class="section-title">
+                    <h2>优秀案例展示</h2>
+                    <p>Excellent case show</p>
+                </div>
+                <div class="slideBox cell">
+                    <div class="slide">
+                        <div class="download row">
+                            <div class="logo col-xs-3 col-xs-offset-3">
+                                <img src="image/excellent_logo.png" alt="">
+                            </div>
+                            <a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.zu.hao.game" class=" col-xs-3">点击下载</a>
+                        </div>
+                        <div class="detailTxt">
+                            <h3>卓悦，专为桌游而生！</h3>
+                            <p>师徒系统、线上组队、积分系统</p>
+                            <p>首创线上组队，线下对局模式</p>
+                        </div>
+                        <div class="pic">
+                            <img src="image/excellent_pic.png" alt="">
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="download row">
+                            <div class="logo col-xs-3 col-xs-offset-3">
+                                <img src="image/excellent_logo5.jpg.png" alt="">
+                            </div>
+                            <a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.car2help" class=" col-xs-3" style="background-color: #43d688">点击下载</a>
+                        </div>
+                        <div class="detailTxt">
+                            <h3>行车无界，专业提供电瓶车的救援服务</h3>
+                            <p>专业的团队，专业的实体支持，强大的售后队伍</p>
+                            <p>您的加入会让您畅行无忧！</p>
+                        </div>
+                        <div class="pic">
+                            <img src="image/excellent_pic4.png" alt="">
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="download row">
+                            <div class="logo col-xs-3 col-xs-offset-3">
+                                <img src="image/excellent_logo3.png" alt="">
+                            </div>
+                            <a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.zu.hao.freight" class=" col-xs-3">点击下载</a>
+                        </div>
+                        <div class="detailTxt">
+                            <h3>丫丫省省通，一个方便货主的货运APP</h3>
+                            <p>方便货主轻松发货  方便与丫丫联系</p>
+                            <p>我们运输的不仅是货物，更是一份责任！</p>
+                        </div>
+                        <div class="pic">
+                            <img src="image/excellent_pic3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="slideBox pc">
+                    <div class="slide">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-6 col-lg-6">
+                                <div class="download row">
+                                    <div class="logo col-xs-3 col-xs-offset-3">
+                                        <img src="image/excellent_logo.png" alt="">
+                                    </div>
+                                    <a href="#" class=" col-xs-3">点击下载</a>
+                                </div>
+                                <div class="detailTxt">
+                                    <h3>卓悦，专为桌游而生！</h3>
+                                    <p>师徒系统、线上组队、积分系统</p>
+                                    <p>首创线上组队，线下对局模式</p>
+                                </div>
+                                <div class="pic">
+                                    <img src="image/excellent_pic.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-6">
+                                <div class="download row">
+                                    <div class="logo col-xs-3 col-xs-offset-3">
+                                        <img src="image/excellent_logo3.png" alt="">
+                                    </div>
+                                    <a href="#" class=" col-xs-3">点击下载</a>
+                                </div>
+                                <div class="detailTxt">
+                                    <h3>丫丫省省通，一个方便货主的货运APP</h3>
+                                    <p>方便货主轻松发货  方便与丫丫联系</p>
+                                    <p>我们运输的不仅是货物，更是一份责任！</p>
+                                </div>
+                                <div class="pic">
+                                    <img src="image/excellent_pic3.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-6 col-lg-6">
+                                <div class="download row">
+                                    <div class="logo col-xs-3 col-xs-offset-3">
+                                        <img src="image/excellent_logo2.png" alt="">
+                                    </div>
+                                    <a href="#" class=" col-xs-3" style="background-color: #43d688">点击下载</a>
+                                </div>
+                                <div class="detailTxt">
+                                    <h3>行车无界，专业提供电瓶车的救援服务</h3>
+                                    <p>专业的团队，专业的实体支持，强大的售后队伍</p>
+                                    <p>您的加入会让您畅行无忧！</p>
+                                </div>
+                                <div class="pic">
+                                    <img src="image/excellent_pic4.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-6">
+                                <div class="download row">
+                                    <div class="logo col-xs-3 col-xs-offset-3">
+                                        <img src="image/excellent_logo.png" alt="">
+                                    </div>
+                                    <a href="#" class=" col-xs-3">点击下载</a>
+                                </div>
+                                <div class="detailTxt">
+                                    <h3>卓悦，专为桌游而生！</h3>
+                                    <p>师徒系统、线上组队、积分系统</p>
+                                    <p>首创线上组队，线下对局模式</p>
+                                </div>
+                                <div class="pic">
+                                    <img src="image/excellent_pic.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-6 col-lg-6">
+                                <div class="download row">
+                                    <div class="logo col-xs-3 col-xs-offset-3">
+                                        <img src="image/excellent_logo5.jpg.png" alt="">
+                                    </div>
+                                    <a href="#" class=" col-xs-3" style="background-color: #43d688">点击下载</a>
+                                </div>
+                                <div class="detailTxt">
+                                    <h3>行车无界，专业提供电瓶车的救援服务</h3>
+                                    <p>专业的团队，专业的实体支持，强大的售后队伍</p>
+                                    <p>您的加入会让您畅行无忧！</p>
+                                </div>
+                                <div class="pic">
+                                    <img src="image/excellent_pic4.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-6">
+                                <div class="download row">
+                                    <div class="logo col-xs-3 col-xs-offset-3">
+                                        <img src="image/excellent_logo.png" alt="">
+                                    </div>
+                                    <a href="#" class=" col-xs-3">点击下载</a>
+                                </div>
+                                <div class="detailTxt">
+                                    <h3>卓悦，专为桌游而生！</h3>
+                                    <p>师徒系统、线上组队、积分系统</p>
+                                    <p>首创线上组队，线下对局模式</p>
+                                </div>
+                                <div class="pic">
+                                    <img src="image/excellent_pic.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 第二屏开始-->
+        <!--<div class="row hidden-lg hidden-md hidden-sm text-center">-->
+            <!--<div class=" T titille DingzhiT col-lg-offset-4 col-md-offset-4 col-sm-offset-4 col-xs-offset-2 col-lg-4 col-md-4 col-sm-4 col-xs-8"><span>我们提供的服务</span><br/><span>THE SERVICES WE PROVIDE</span></div>-->
+        <!--</div>-->
+        <div class="section section-two">
+            <div class="row ">
+                <div class=" T titille dingzhiT col-lg-offset-4 col-md-offset-4 col-sm-offset-4 col-xs-offset-2 col-lg-4 col-md-4 col-sm-4 col-xs-8"><span>我们提供的服务</span><br/><span>THE SERVICES WE PROVIDE</span></div>
+            </div>
+            <div class="section-two2 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-0 col-lg-10 col-md-10 col-sm-10 col-xs-12">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-4 icon0">
+                    <a target="_blank" href="template/servicesdetail.html?id=0" style="color: #000;text-decoration: none">
+                        <div class="icon1">
+                            <p class="icon-pingguo zhutiColor icon"></p>
+                            <p class="zhutiColor zhutiSize">IOS开发</p>
+                            <p class="greyColor hidden-xs">为客户提供专业的移动互联网转 型解决方案，帮客户出谋划策</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-4 icon2">
+                    <a target="_blank" href="template/servicesdetail.html?id=1" style="color: #000;text-decoration: none">
+                        <div class="icon1">
+                            <p class="icon-anzhuo zhutiColor icon"></p>
+                            <p class="zhutiColor zhutiSize">Android开发</p>
+                            <p class="greyColor hidden-xs">为客户提供专业的移动互联网转 型解决方案，帮客户出谋划策</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-4 icon3">
+                    <a target="_blank" href="template/servicesdetail.html?id=2" style="color: #000;text-decoration: none">
+                        <div class="icon1">
+                            <p class="icon-weixin zhutiColor icon"></p>
+                            <p class="zhutiColor zhutiSize">微信开发</p>
+                            <p class="greyColor hidden-xs">专注微信小程序、公众平台开发，提供微信商城个性化服务</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-4 icon4">
+                    <a target="_blank" href="template/servicesdetail.html?id=3" style="color: #000;text-decoration: none">
+                        <div class="icon1">
+                            <p class="icon-app1 zhutiColor icon"></p>
+                            <p class="zhutiColor zhutiSize"><span class="hidden-xs">智能</span>APP开发</p>
+                            <p class="greyColor hidden-xs">为客户提供专业的移动互联网转 型解决方案，帮客户出谋划策</p>
+                        </div>
+                    </a>
+                </div>
+                <!--</div>-->
+                <!--<div class="section-two2  col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-10 col-md-10 col-sm-10 col-xs-10">-->
+                <!-- 第二排-->
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-4 icon5">
+                    <a target="_blank" href="template/servicesdetail.html?id=4" style="color: #000;text-decoration: none">
+                        <p class="icon-donggandanche zhutiColor icon"></p>
+                        <p class="zhutiColor zhutiSize">打车软件开发</p>
+                        <p class="greyColor hidden-xs">专注微信小程序、公众平台开发，提供微信商城个性化服务</p>
+                    </a>
+                </div>
+                <div class="icon1">
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-4 icon6">
+                    <a target="_blank" href="template/servicesdetail.html?id=5" style="color: #000;text-decoration: none">
+                        <div class="icon1">
+                            <p class="icon-xitong zhutiColor icon"></p>
+                            <p class="zhutiColor zhutiSize">分销系统开发</p>
+                            <p class="greyColor hidden-xs">为客户提供专业的移动互联网转 型解决方案，帮客户出谋划策</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-4 icon7">
+                    <a target="_blank" href="template/servicesdetail.html?id=6" style="color: #000;text-decoration: none">
+                        <div class="icon1">
+                            <p class="icon-iconoa zhutiColor icon"></p>
+                            <p class="zhutiColor zhutiSize">OA开发</p>
+                            <p class="greyColor hidden-xs">为客户提供专业的移动互联网转 型解决方案，帮客户出谋划策</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-4 icon8">
+                    <a target="_blank" href="template/servicesdetail.html?id=7" style="color: #000;text-decoration: none">
+                        <div class="icon1">
+                            <p class="icon-vralternation zhutiColor icon"></p>
+                            <p class="zhutiColor zhutiSize">VR开发</p>
+                            <p class="greyColor hidden-xs">专注微信小程序、公众平台开发，提供微信商城个性化服务</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-4 icon8  hidden-md hidden-sm hidden-lg">
+                    <div class="icon1">
+                        <div class="jia">+</div>
+                        <!--<p class="zhutiColor zhutiSize">跟多</p>-->
+                        <!--<p class="greyColor hidden-xs">专注微信小程序、公众平台开发，提供微信商城个性化服务</p>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--4 新闻中心 -->
+        <div class="section" style="padding-top: 50px">
+            <div class="section-news inner">
+                <div class="section-title">
+                    <h2>新闻中心</h2>
+                    <p>news center</p>
+                </div>
+                <p>互联网时代，你需要定制您的APP、网站...</p>
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <div class="logo" style="width: auto">
+                            <img src="image/excellent_logo.png" alt="">
+                        </div>
+                        <div class="text">
+                            <p>卓悦，专为桌游而生！</p>
+                        </div>
+                        <div class="pic  center-block" style="background-image: url('image/new1.jpg')">
+                            <div class="shaow" style="background-image: url('image/news_shadow1.png')">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <div class="logo">
+                            <img src="image/excellent_logo2.png" alt="">
+                        </div>
+                        <div class="text">
+                            <p>新商城APP，购物与智能售卖机结合！</p>
+                        </div>
+                        <div class="pic center-block" style="background-image: url('image/new2.jpg')">
+                            <div class="shaow" style="background-image: url('image/news_shadow2.png')">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <div class="logo">
+                            <img src="image/excellent_logo3.png" alt="">
+                        </div>
+                        <div class="text">
+                            <p>丫丫省省通，一个方便货主的货运APP</p>
+                        </div>
+                        <div class="pic center-block" style="background-image: url('image/new3.jpg')">
+                            <div class="shaow" style="background-image: url('image/news_shadow3.png')">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <div class="logo">
+                            <img src="image/excellent_logo4.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <p>隔壁鲜香，真正原生态跑山猪</p>
+                        </div>
+                        <div class="pic center-block" style="background-image: url('image/new4.jpg')">
+                            <div class="shaow" style="background-image: url('image/news_shadow4.png')">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--5 了解我们-->
+        <div class="section section-understandBox" style="">
+            <div class="section-understand pc"
+                 style="background: #051427 url('image/aboutUs_pc_bg2.jpg') no-repeat center/cover;height:  100%">
+                <div class="pc-title">
+                    <img src="image/aboutus_title.png" alt="" >
+                </div>
+                <div class="slide pc-slide">
+                    <div class="pc-txt1">
+                        <img src="image/aboutus_txt1_03.png" alt="" >
+                    </div>
+                    <div class="pc-txt2">
+                        <img src="image/aboutus_txt2_07.png" alt="">
+                    </div>
+                </div>
+                <div class="slide slide-add pc-slide">
+                    <div class="pc-txt1">
+                        <img src="image/aboutus_2txt1_03_03.png" alt="" >
+                    </div>
+                    <div class="pc-txt2">
+                        <img src="image/aboutus_2txt2_06.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="section-understand cell">
+                <div class="section-title">
+                    <h2>关于我们</h2>
+                    <p>about us</p>
+                </div>
+                <div class="text">
+                    <h3>专业的互联网+服务运营商</h3>
+                    <div class="text-detail1">
+                        <p class="h4">诚信构筑卓越  服务创造价值</p>
+                        <p>
+                            1000平米办公面积 <br>
+                            +<br>
+                            上百名员工 <br>
+                            +<br>
+                            1000家客户 使命
+                        </p>
+                    </div>
+                    <div class="text-detail2">
+                        <p>优秀企业</p>
+                        <p>中国企业联合会 中国企业家协会  等机构和协会认定</p>
+                    </div>
+                    <div class="text-detail3">
+                        <p> 严谨科学的行为规范    凝聚着大量的优秀人才</p>
+                        <p>选择我们，定制您的专属APP</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 第六屏开始-->
+        <div class="section  section-six" style="overflow: hidden" >
+            <div class="row">
+                <div class=" T titille contactT col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-offset-2 col-lg-4 col-md-4 col-sm-8 col-xs-8"><span>联系我们&ensp;/&ensp;</span><span>CONTACT ME</span></div>
+            </div>
+            <div class="contact-bannenr">
+                <div class="row hidden-xs">
+                    <div class="imgContainer  col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-lg-11 col-md-11 col-sm-11 col-xs-11">
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 contact-imgC imgY">
+                            <img class="img-circle img-responsive oneimg" src="image/00.png" alt=""/>
+                            <img class="img-circle img-responsive twoimg" src="image/1-1.png" alt=""/>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 contact-imgC imgY">
+                            <img class="img-circle img-responsive oneimg" src="image/1.png" alt=""/>
+                            <img class="img-circle img-responsive twoimg" src="image/1-2.png" alt=""/>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 contact-imgC imgX">
+                            <img class="img-circle img-responsive oneimgX" src="image/2.png" alt=""/>
+                            <img class="img-circle img-responsive twoimgX" src="image/1-3.png" alt=""/>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 contact-imgC imgY">
+                            <img class="img-circle img-responsive oneimg" src="image/3.png" alt=""/>
+                            <img class="img-circle img-responsive twoimg" src="image/1-4.png" alt=""/>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 contact-imgC imgY">
+                            <img class="img-circle img-responsive oneimg" src="image/4.png" alt=""/>
+                            <img class="img-circle img-responsive twoimg" src="image/1-5.png" alt=""/>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 contact-imgC imgY">
+                            <img class="img-circle img-responsive oneimg" src="image/5.png" alt=""/>
+                            <img class="img-circle img-responsive twoimg" src="image/1-6.png" alt=""/>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 contact-imgC imgY">
+                            <img class="img-circle img-responsive oneimg" src="image/6.png" alt=""/>
+                            <img class="img-circle img-responsive twoimg" src="image/1-7.png" alt=""/>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 contact-imgC imgY">
+                            <img class="img-circle img-responsive oneimg" src="image/16.png" alt=""/>
+                            <img class="img-circle img-responsive twoimg" src="image/1-8.png" alt=""/>
+                        </div>
+                    </div>
+                </div>
+                <!-- 第二排-->
+                <div class="row  hidden-xs">
+                    <div class="imgContainer col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-lg-11 col-md-11 col-sm-11 col-xs-11">
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 contact-imgC imgY">
+                            <img class="img-circle img-responsive oneimg" src="image/8.png" alt=""/>
+                            <img class="img-circle img-responsive twoimg" src="image/1-9.png" alt=""/>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 contact-imgC imgY">
+                            <img class="img-circle img-responsive oneimg" src="image/9.png" alt=""/>
+                            <img class="img-circle img-responsive twoimg" src="image/1-10 .png" alt=""/>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 contact-imgC imgY">
+                            <img class="img-circle img-responsive oneimg" src="image/10.png" alt=""/>
+                            <img class="img-circle img-responsive twoimg" src="image/1-11 .png" alt=""/>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 contact-imgC imgY">
+                            <img class="img-circle img-responsive oneimg" src="image/11.png" alt=""/>
+                            <img class="img-circle img-responsive twoimg" src="image/1-12.png" alt=""/>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 contact-imgC imgY">
+                            <img class="img-circle img-responsive oneimg" src="image/12.png" alt=""/>
+                            <img class="img-circle img-responsive twoimg" src="image/1-13.png" alt=""/>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 contact-imgC imgY">
+                            <img class="img-circle img-responsive oneimg" src="image/13.png" alt=""/>
+                            <img class="img-circle img-responsive twoimg" src="image/1-14 .png" alt=""/>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 contact-imgC imgY">
+                            <img class="img-circle img-responsive oneimg" src="image/14.png" alt=""/>
+                            <img class="img-circle img-responsive twoimg" src="image/1-15 .png" alt=""/>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 contact-imgC imgY">
+                            <img class="img-circle img-responsive oneimg" src="image/15.png" alt=""/>
+                            <img class="img-circle img-responsive twoimg" src="image/1-16.png" alt=""/>
+                        </div>
+                    </div>
+                </div>
+                <!-- 手机中显示的联系人头像栏-->
+                <div class=" row hidden-lg hidden-md hidden-sm phoneimgContainer">
+                    <div class="phoneIMGS1">
+                        <div class="imgContainer col-xs-12">
+                            <div class="col-xs-3 contact-imgC imgY">
+                                <img class="img-circle img-responsive oneimg" src="image/00.png" alt=""/>
+                                <img class="img-circle img-responsive twoimg" src="image/1-1.png" alt=""/>
+                            </div>
+                            <div class="col-xs-offset-1 col-xs-3 contact-imgC imgY">
+                                <img class="img-circle img-responsive oneimg" src="image/1.png" alt=""/>
+                                <img class="img-circle img-responsive twoimg" src="image/1-2.png" alt=""/>
+                            </div>
+                            <div class="col-xs-offset-1 col-xs-3 contact-imgC imgX">
+                                <img class="img-circle img-responsive oneimgX" src="image/2.png" alt=""/>
+                                <img class="img-circle img-responsive twoimgX" src="image/1-3.png" alt=""/>
+                            </div>
+                        </div>
+                        <div class="imgContainer col-xs-12">
+                            <div class="col-xs-3 contact-imgC imgY">
+                                <img class="img-circle img-responsive oneimg" src="image/3.png" alt=""/>
+                                <img class="img-circle img-responsive twoimg" src="image/1-4.png" alt=""/>
+                            </div>
+                            <div class="col-xs-offset-1 col-xs-3 contact-imgC imgY">
+                                <img class="img-circle img-responsive oneimg" src="image/4.png" alt=""/>
+                                <img class="img-circle img-responsive twoimg" src="image/1-5.png" alt=""/>
+                            </div>
+                            <div class="col-xs-offset-1 col-xs-3 contact-imgC imgY">
+                                <img class="img-circle img-responsive oneimg" src="image/5.png" alt=""/>
+                                <img class="img-circle img-responsive twoimg" src="image/1-6.png" alt=""/>
+                            </div>
+                        </div>
+                        <div class="imgContainer col-xs-12">
+                            <div class="col-xs-3 contact-imgC imgY">
+                                <img class="img-circle img-responsive oneimg" src="image/6.png" alt=""/>
+                                <img class="img-circle img-responsive twoimg" src="image/1-7.png" alt=""/>
+                            </div>
+                            <div class="col-xs-offset-1 col-xs-3 contact-imgC imgY">
+                                <img class="img-circle img-responsive oneimg" src="image/16.png" alt=""/>
+                                <img class="img-circle img-responsive twoimg" src="image/1-8.png" alt=""/>
+                            </div>
+                            <div class="col-xs-offset-1 col-xs-3 contact-imgC imgY">
+                                <img class="img-circle img-responsive oneimg" src="image/8.png" alt=""/>
+                                <img class="img-circle img-responsive twoimg" src="image/1-9.png" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="phoneIMGS2">
+                        <div class="imgContainer col-xs-12">
+                            <div class="col-xs-3 contact-imgC imgY">
+                                <img class="img-circle img-responsive oneimg" src="image/8.png" alt=""/>
+                                <img class="img-circle img-responsive twoimg" src="image/1-9.png" alt=""/>
+                            </div>
+                            <div class="col-xs-offset-1 col-xs-3 contact-imgC imgY">
+                                <img class="img-circle img-responsive oneimg" src="image/9.png" alt=""/>
+                                <img class="img-circle img-responsive twoimg" src="image/1-10 .png" alt=""/>
+                            </div>
+                            <div class="col-xs-offset-1 col-xs-3 contact-imgC imgY">
+                                <img class="img-circle img-responsive oneimg" src="image/10.png" alt=""/>
+                                <img class="img-circle img-responsive twoimg" src="image/1-11 .png" alt=""/>
+                            </div>
+                        </div>
+                        <div class="imgContainer col-xs-12">
+                            <div class=" col-xs-3 contact-imgC imgY">
+                                <img class="img-circle img-responsive oneimg" src="image/11.png" alt=""/>
+                                <img class="img-circle img-responsive twoimg" src="image/1-12.png" alt=""/>
+                            </div>
+                            <div class="col-xs-offset-1 col-xs-3 contact-imgC imgY">
+                                <img class="img-circle img-responsive oneimg" src="image/12.png" alt=""/>
+                                <img class="img-circle img-responsive twoimg" src="image/1-13.png" alt=""/>
+                            </div>
+                            <div class="col-xs-offset-1 col-xs-3 contact-imgC imgY">
+                                <img class="img-circle img-responsive oneimg" src="image/13.png" alt=""/>
+                                <img class="img-circle img-responsive twoimg" src="image/1-14 .png" alt=""/>
+                            </div>
+                        </div>
+                        <div class="imgContainer col-xs-12">
+                            <div class="col-xs-3 contact-imgC imgY">
+                                <img class="img-circle img-responsive oneimg" src="image/14.png" alt=""/>
+                                <img class="img-circle img-responsive twoimg" src="image/1-15 .png" alt=""/>
+                            </div>
+                            <div class="col-xs-offset-1 col-xs-3 contact-imgC imgY">
+                                <img class="img-circle img-responsive oneimg" src="image/15.png" alt=""/>
+                                <img class="img-circle img-responsive twoimg" src="image/1-16.png" alt=""/>
+                            </div>
+                            <div class="col-xs-offset-1 col-xs-3 contact-imgC imgY">
+                                <img class="img-circle img-responsive oneimg" src="image/00.png" alt=""/>
+                                <img class="img-circle img-responsive twoimg" src="image/1-1.png" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-B">
+                <div class="contact-L col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-lg-10 col-md-10 col-sm-10 col-xs-12">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left">
+                        <span class="col-lg-3 col-md-3 col-sm-3 col-xs-6"><span class="hidden-xs">公司电话:</span>028-87036752</span>
+                        <span class="col-lg-3 col-md-3 col-sm-3 col-xs-6 hidden-xs"><span class="hidden-xs">公司电话:</span>13880414115</span>
+                        <span class="col-lg-3 col-md-3 col-sm-3 col-xs-6"><span class="hidden-xs">联系手机:</span><span style="color: red;">18116563881</span></span>
+                        <span class="col-lg-3 col-md-3 col-sm-3 col-xs-6"><span class="hidden-xs">公司官网：</span>www.ap9p.com</span>
+                        <span class="col-lg-3 col-md-3 col-sm-3 col-xs-6"><span class="hidden-xs">地址:</span>高新吉庆四路168号1108室</span>
+                        <span class="col-lg-3 col-md-3 col-sm-3">企业邮箱:3540731736@qq.com</span>
+                        <span class="col-lg-3 col-md-3 col-sm-3 hidden-xs">在线QQ:3540731736</span>
+                        <!--<span class="col-lg-2 col-md-1 col-sm-2 col-xs-12">联系方式</span>-->
+                    </div>
+                </div>
+            </div>
+            <div class="baiduMap">
+                <!--乘车路线-->
+                <div class="busline" style="font-size: 16px">
+                    <p> 途经公交车：501路，859路，118路，华阳4A路，84路--盛和西街口</p>
+                    <p>附近地铁线：地铁一号线--世纪城站</p>
+                </div>
+                <!--百度地图容器-->
+                <div class="cell">
+                    <input type="text" placeholder="请输入起点地址" class="mapstar"
+                           style="width: 50%;border: none;background: rgba(255,255,255,0.6);padding: 5px 0 5px 10px;">
+                    <span class="btn btn-primary">导航到店</span>
+                    <div id="r-result"></div>
+                </div>
+                <div style="width:90%;height:400px;border:#ccc solid 1px;margin: 10px 5% 4%;font-size:12px" id="map"></div>
+            </div>
+            <!-- pc端显示的foot-->
+            <div class="foot hidden-md hidden-sm hidden-xs">
+                <p class="text-center col-1g-12"> Copyrightⓒweiwang Ltd.All rights reserved.蜀ICP备17014142号</p>
+            </div>
+        </div>
+        <!-- 手机适应-->
+        <!-- 第六屏结束-->
+    </div>
+<!--滚动屏结束-->
+<!--底部footer-->
+<!--底部咨询 href="sms:18116563881"-->
+<div class="phone-talk">
+    <ul class="row">
+        <li class="col-xs-3"><a href="sms:18116563881">短信咨询</a></li>
+        <li class="col-xs-3">
+            <a href="http://wpa.qq.com/msgrd?v=3&uin=3540731736&site=qq&menu=yes">
+                QQ咨询
+            </a>
+        </li>
+        <li class="col-xs-3"><a href="tel:18116563881">免费热线</a></li>
+        <li class="col-xs-3">
+            <!--<a href="http://wpa.qq.com/msgrd?v=3&uin=3540731736&site=qq&menu=yes">-->
+            <!--<a href="tencent://message/?uin=3540731736&Site=QQ咨询&Menu=yes">-->
+            <a href="tel:18116563881">
+                售后服务
+            </a>
+        </li>
+    </ul>
+</div>
+<!--侧边咨询-->
+<div class="right-phone cell">
+    <a href="tel:18116563881"><img src="image/iphone.png" alt=""></a>
+</div>
+<div class="pc" style='position: fixed;top: 50%;right: 0;width: 70px;height: 70px; background-color:rgba(68,175,233,0.8);'>
+    <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=3540731736&site=qq&menu=yes">
+        <img border="0" src="image/r_qq.png" alt="欢迎咨询" title="欢迎咨询"/>
+    </a>
+</div>
+<!--</div>-->
+
+<!--<script src="JS/jquery-1.8.3.min.js"></script>-->
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/jquery.fullPage.min.js"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="js/index.js"></script>
+<script>
+    $(".jiantouUp").click(function(){
+        $.fn.fullpage.moveSectionUp();
+    })
+    $(".jiantouNext").click(function(){
+        $.fn.fullpage.moveSectionDown();
+    })
+</script>
+<script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap(){
+        createMap();//创建地图
+        setMapEvent();//设置地图事件
+        addMapControl();//向地图添加控件
+        addMapOverlay();//向地图添加覆盖物
+    }
+    function createMap(){
+        map = new BMap.Map("map");
+        map.centerAndZoom(new BMap.Point(104.075046,30.56007),16);
+    }
+    function setMapEvent(){
+        map.enableScrollWheelZoom();
+        map.enableKeyboard();
+        map.enableDragging();
+        map.enableDoubleClickZoom()
+    }
+    function addClickHandler(target,window){
+        target.addEventListener("click",function(){
+            target.openInfoWindow(window);
+        });
+    }
+    function addMapOverlay(){
+        var markers = [
+            {content:"成都硬件app开发有限公司",title:"威网",imageOffset: {width:-46,height:-21},position:{lat:30.558647,lng:104.071646}}
+        ];
+        for(var index = 0; index < markers.length; index++ ){
+            var point = new BMap.Point(markers[index].position.lng,markers[index].position.lat);
+            var marker = new BMap.Marker(point,{icon:new BMap.Icon("http://api.map.baidu.com/lbsapi/createmap/images/icon.png",new BMap.Size(20,25),{
+                imageOffset: new BMap.Size(markers[index].imageOffset.width,markers[index].imageOffset.height)
+            })});
+            var label = new BMap.Label(markers[index].title,{offset: new BMap.Size(25,5)});
+            var opts = {
+                width: 200,
+                title: markers[index].title,
+                enableMessage: false
+            };
+            var infoWindow = new BMap.InfoWindow(markers[index].content,opts);
+            marker.setLabel(label);
+            addClickHandler(marker,infoWindow);
+            map.addOverlay(marker);
+        };
+    }
+    //向地图添加控件
+    function addMapControl(){
+        var scaleControl = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+        scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
+        map.addControl(scaleControl);
+        var navControl = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+        map.addControl(navControl);
+        var overviewControl = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:true});
+        map.addControl(overviewControl);
+    }
+    var map;
+    initMap();
+//公交导航
+/*    $('.baiduMap .btn').click(function(){
+        var geolocation = new BMap.Geolocation();
+        geolocation.getCurrentPosition(function(r){
+            var p1 =new BMap.Point(r.point.lat,r.point.lng);
+            var p2 = new BMap.Point(30.558647,104.071646);
+            var transit = new BMap.TransitRoute(map, {
+                renderOptions: {map: map}
+            });
+            console.log(r.point.lat,r.point.lng);
+//            transit.search(p1,p2);
+            window.open("bdapp://map/walknavi?origin="+r.point.lat+","+r.point.lng+"&destination=30.558647,104.071646", '_blank');
+        });
+    });*/
+    $('.baiduMap .btn').click(function(){
+//        console.log($('.baiduMap .mapstar').val())
+        if($('.baiduMap .mapstar').val()==null ||$('.baiduMap .mapstar').val()=='' ){
+            alert('请输入起点地址')
+        }else{
+            var transit = new BMap.TransitRoute(map, {
+                renderOptions: {map: map, panel: "r-result"}
+            });
+            transit.search($('.baiduMap .mapstar').val(), "世纪城");
+        }
+
+    });
+
+//    var p1 = new BMap.Point(116.301934,39.977552);
+
+
+</script>
+</body>
+</html>
